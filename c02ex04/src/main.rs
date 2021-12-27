@@ -13,7 +13,7 @@ fn main() {
     let sb: f64;
     let sl: f64;
 
-    print!("Entre com a quantidade de trabalhada?  ");
+    print!("Entre com a quantidade de horas trabalhada?  ");
     io::stdout().flush().unwrap();
     io::stdin().read_line(&mut hora_trab).unwrap();
     ht = hora_trab.trim().parse::<f64>().unwrap();

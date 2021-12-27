@@ -2,17 +2,17 @@ use std::io;
 use std::io::prelude::*;
 
 fn main(){
-    let mut valor = String::new();
-    let vlr: i64;
+    let mut idade = String::new();
+    let ano: i64;
 
     print!("Informe a sua idade: ");
     io::stdout().flush().unwrap();
-    io::stdin().read_line(&mut valor).unwrap();
+    io::stdin().read_line(&mut idade).unwrap();
 
-    vlr = valor.trim().parse::<i64>().unwrap();
+    ano = idade.trim().parse::<i64>().unwrap();
 
     print!("");
-    print!("Sua idade é: {} ", vlr);
+    print!("Sua idade é: {} ", ano);
 
     println!("");
     print!("Tecle <Enter> para encerra o programa...");
